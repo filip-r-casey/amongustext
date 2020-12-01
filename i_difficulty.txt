@@ -1,0 +1,12 @@
+Easy:
+    Number of Crewmates = 3
+    Number of Tasks Crewmates Need to Complete = 5
+Normal:
+    Number of Crewmates = 4
+    Number of Tasks Crewmates Need to Complete = 4
+Hard:
+    Number of Crewmates = 5
+    Number of Tasks Crewmates Need to Complete = 3
+Custom:
+    Number of Crewmates = 3
+    Number of Tasks Crewmates Need to Complete = 2

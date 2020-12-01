@@ -1,0 +1,16 @@
+Easy:
+    Number of Crewmates = 5
+    Number of Finished Tasks = 2
+    Emergency Meeting = true
+Normal:
+    Number of Crewmates = 4
+    Number of Finished Tasks = 1
+    Emergency Meeting = true
+Hard:
+    Number of Crewmates = 3
+    Number of Finishde Tasks = 0
+    Emergency Meeting = false
+Custom:
+    Number of Crewmates = 3
+    Number of Finished Tasks = 1
+    Emergency Meeting = false

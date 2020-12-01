@@ -1,0 +1,175 @@
+Among Us is a popular multiplayer game about workers on a space ship.
+There are some number of crewmates, who finish tasks to win the game, and one imposter, who tries to kill all the crewmates.
+This is a simplified, singleplayer version of the game.
+In the main menu you are presented with the option of playing as a crewmate or an imposter.
+These two options play entirely differently so this tutorial branches off here.
+
+***************Crewmate*****************
+
+    MAIN GAMEPLAY
+When you are playing as a crewmate there are three total tasks you can complete, the amount you actually complete will vary because of your difficulty
+
+You are randomly given a task to do every round, if you complete it you move on to the next round and start a new task
+If you fail the next round begins but you have to try again
+
+The danger of passing rounds is that every round, there is a chance that a crewmate will die. If all crewmates die, you lose the game.
+
+This section will delve further into the operation of individual tasks.
+
+    TASK 1: ENCRYPTION
+In this task the player is challenged with decrypting a message.
+
+First the alphabet will be printed:
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+Then the alphabet will be shifted and reprinted creating a simple cipher:
+I J K L M N O P Q R S T U V W X Y Z A B C D E F G H
+Then a message will be printed, encrypted with the given cipher:
+LIG
+The message can be encrypted by finding the corresponding real letters of the encrypted message. When printed correctly, the task will be completed.
+DAY
+
+    TASK 2: Wires
+In this task the player is challenged with reconnecting broken wires 
+
+The layout of wires will be printed:
+_________________
+|1             2|
+|2             3|
+|3             8|
+|4             5|
+|5             6|
+|6             4|
+|7             1|
+|8             7|
+────────────────
+
+In order to connect the wires, you need to print the location of the given value on the right side, this can be a bit confusing.
+
+For example the first value it will ask for is 1. As a response you should print where the 1 is located. In this case the 1 is at the 7th position.
+Here's an example of the correct answers for this task
+
+1: 7
+2: 1
+3: 2
+4: 6
+5: 4
+6: 5
+7: 8
+8: 3
+
+    TASK 3: Lights
+In this task the player is challenged with flipping on the light switches
+
+The light switches will be represented visually by ASCII characters like this:
+_____________________
+|              ║     |
+|   ON         ║     |
+|              ║     |
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+_____________________
+|              ║     |
+|   ON         ║     |
+|              ║     |
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+_____________________
+|    ║               |
+|    ║     OFF       |
+|    ║               |
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+_____________________
+|              ║     |
+|   ON         ║     |
+|              ║     |
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+_____________________
+|    ║               |
+|    ║     OFF       |
+|    ║               |
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+_____________________
+|              ║     |
+|   ON         ║     |
+|              ║     |
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+_____________________
+|    ║               |
+|    ║     OFF       |
+|    ║               |
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+_____________________
+|    ║               |
+|    ║     OFF       |
+|    ║               |
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+Then the user will be prompted to either leave or flip the switches based on their current status.
+If a light is off, it should be switched. If a light is on, it should be left.
+
+
+This concludes the task section of the tutorial
+
+    EMERGENCY MEETING
+The last thing that a Crewmate player can do is call an emergency meeting.
+This may not be the most advisable, in a text-based game as this, but it serves as a way for a player to get a quick victory.
+
+At the end of every round the player will be prompted with the possibility of an emergency meeting.
+This can only be used once per game.
+
+If used, the player is presented with a list of living crewmates. The player can then guess which of these crewmates is the imposter.
+If the player guesses correctly, the imposter will be ejected, and the game will be won.
+If the player guesses incorrectly, the crewmate that the player chose will be killed and the game continues.
+
+    WINNING THE GAME
+The game is won if the player completes the amount of tasks defined in their chosen difficulty setting, without the imposter killing all of the other crewmates first.
+
+***************Imposter*****************
+
+    MAIN GAMEPLAY  
+Imposter gameplay is entirely different.
+As the imposter, your goal is to kill as many crewmates as possible.
+This can be accomplished with 2 different actions.
+
+    CHECK ROOMS
+If the player chooses to check rooms, they will be given a list of the available rooms to choose from.
+If the room that they choose has a crewmate in it, they will be given the oppurtunity to kill or spare them.
+If the crewmate is killed the round is over and the imposter is one step closer to victory.
+If the crewmate is spared the round is still over.
+
+Similar to the crewmate game, it is important to use as few rounds as possible. In order to mimic the real game, as rounds go on, the likelihood that the imposter fails increases exponentially.
+Therefore in the "Check Rooms" phase it is important to use as few rounds as possible.
+
+Based on this system, if an imposter enters a room with no crewmates, they will waste a round.
+This can be partially avoided by the vent system.
+
+Based on the rooms in the actual game, some rooms have vents that allow teleportation to other rooms.
+This essentially acts as another free room check that doesn't take a round. It is very important to Imposter victory
+
+    SABOTAGE ROOMS
+Obviously in a non-visual game the imposter is at a severe disadvantage.
+To remedy this problem, and move away from simple room guessing, the imposter can also sabotage rooms.
+When a room is sabotaged it can no longer be entered, therefore limiting the mobility of crewmates.
+This is crucial to do to win as an imposter.
+
+***************Other Functionality******************
+
+What has been described in the tutorial to this point encompasses the majority of the game. However, there are a couple more options to make the experience more enjoyable.
+
+    STATISTICS
+At the end of every game, the statistics are stored to a text file. This allows for storage inbetween games and can be helpful to players to see how they are trending.
+These can be accessed from the "player_statistics.txt" file or the main menu
+
+    DIFFICULTY CUSTOMIZATION
+The game has not been seriously playtested for each difficulty and is more functional than anything else. Therefore I have allowed not only for a custom difficulty setting, but also the option to change the difficulty presets.
+These can all be accessed in either the "i_difficulty.txt" or "c_difficulty.txt" files.
+Modifying the values in the text file will change the difficulty settings in game as long as the changes are SAVED.
+Feel free to change the difficulty settings to work best for you.
+
+    TASK PRACTICE
+If you simply want to play a single task you are able to do so from the main menu
+
+    CUSTOMIZATION
+All of the .cpp, .txt, and .h files are included. Rooms and tasks are defined as classes in order to make customization and expansion of the game simple.
+
+    CHEATS
+If you simply need to check the game for bugs and don't want to bother with doing the tasks. Use 'uhoh' to solve all but wires instantly.
+
+THANK YOU FOR PLAYING
